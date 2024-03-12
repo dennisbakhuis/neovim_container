@@ -1,3 +1,6 @@
+# Neovim Container - A devcontainer-like experience for Neovim.
+# MIT License - Copyright (c) 2024 Dennis Bakhuis
+
 # Docker build script for the production container
 #
 # This script is called by container_up.sh to build the container.

@@ -1,4 +1,7 @@
 #!/bin/bash
+# Neovim Container - A devcontainer-like experience for Neovim.
+# MIT License - Copyright (c) 2024 Dennis Bakhuis
+#
 # Docker start script to start the container
 #
 # This script is called to start (run) the container. It is

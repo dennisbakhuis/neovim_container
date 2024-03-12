@@ -1,6 +1,8 @@
 #!/bin/sh
+# Neovim Container - A devcontainer-like experience for Neovim.
+# MIT License - Copyright (c) 2024 Dennis Bakhuis
 
-SCRIPT_NAME="Neovim_Container - container_up.sh"
+SCRIPT_NAME="Neovim_Container - container.sh"
 SCRIPT_VERSION="0.1.0"
 
 # defaults

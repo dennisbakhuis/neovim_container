@@ -1,5 +1,6 @@
 #!/bin/bash
-# Install script to install neovim and other packages
+# Neovim Container - A devcontainer-like experience for Neovim.
+# MIT License - Copyright (c) 2024 Dennis Bakhuis
 
 # Add some sensible default packages
 apt-get -y update && apt-get -y install \
