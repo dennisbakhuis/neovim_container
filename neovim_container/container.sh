@@ -72,15 +72,13 @@ fi
 
 # Get project name from pyproject.toml
 if [ -z "$PROJECT_NAME" ]; then
-	# Check if git is installed
-	if ! command -v git >/dev/null 2>&1; then
-		echo "Git is not installed. Exiting."
+	# Check if pyproject.toml exists
+	if [ ! -f pyproject.toml ]; then
+		echo "pyproject.toml not found in current directory. Exiting."
 		exit 1
 	fi
 
-	GIT_ROOT=$(git rev-parse --show-toplevel)
-	PYPROJECT_PATH="$GIT_ROOT/pyproject.toml"
-	PROJECT_NAME=$(grep '^name = ' "$PYPROJECT_PATH" | head -n 1 | awk -F '"' '{print $2}')
+	PROJECT_NAME=$(grep '^name = ' "pyproject.toml" | head -n 1 | awk -F '"' '{print $2}')
 fi
 
 if [ -z "$PROJECT_NAME" ]; then
