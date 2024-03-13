@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "neovim_containers_example"
+version = "0.1.0"
+description = "Example pyproject.toml file to demonstrate Neovim Containers"
+authors = ["Dennis Bakhuis <dennis.bakhuis@tennet.eu>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

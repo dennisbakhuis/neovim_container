@@ -1,5 +1,5 @@
-# Neovim container - Develop (almost) like in a DevContainer
-Develop inside a container using Neovim with your local settings.
+# 🎁Neovim container - Develop (almost) like in a DevContainer
+Develop inside your container using Neovim with your local settings.
 
 For my work it is convenient to work in the same environment as the production
 environment, regardless of what host computer I am using. Vscode has this nice
@@ -9,8 +9,8 @@ not need DevContainers. Neovim is a text-based application and not special trick
 are required. Vscode on the other hand is a GUI application and needs a more
 complex setup using a client/server architecture.
 
-This repos shows a way to work with Neovim inside your production container
-while still using your local neovim config.
+This repos shows a workflow to work with Neovim inside your production container
+while still using your local Neovim config.
 
 Requirements:
 - Docker
