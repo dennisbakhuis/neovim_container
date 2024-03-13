@@ -1,6 +1,7 @@
 #!/bin/sh
 # Neovim Container - A devcontainer-like experience for Neovim.
 # MIT License - Copyright (c) 2024 Dennis Bakhuis
+set +e
 
 NEOVIM_CONTAINER_REPO="https://github.com/dennisbakhuis/neovim_container.git"
 NEOVIM_CONTAINER_TEMP_FOLDER="neovim_container_temp"
@@ -18,6 +19,13 @@ if [ -d "$NEOVIM_CONTAINER_TARGET_FOLDER" ]; then
 	exit 1
 fi
 
+# Do a partial clone (experimental feature)
+# git clone --no-checkout --depth=1 $NEOVIM_CONTAINER_REPO $NEOVIM_CONTAINER_TEMP_FOLDER
+# cd $NEOVIM_CONTAINER_TEMP_FOLDER
+# git checkout main -- neovim_container README.md LICENSE
+# cd ..
+
+# Full clone
 git clone $NEOVIM_CONTAINER_REPO $NEOVIM_CONTAINER_TEMP_FOLDER
 mv $NEOVIM_CONTAINER_TEMP_FOLDER/neovim_container $NEOVIM_CONTAINER_TARGET_FOLDER
 mv $NEOVIM_CONTAINER_TEMP_FOLDER/README.md $NEOVIM_CONTAINER_TARGET_FOLDER/
